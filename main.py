@@ -180,7 +180,7 @@ def generate_search_query(client, research_state, previous_queries):
     Previous Queries: {json.dumps(previous_queries, indent=2)}
 
     Generate a refined search query for arXiv that will help us find papers most relevant to our current focus and knowledge gaps.
-    The query should be a string of keywords and phrases. You can use AND/OR operators, but keep it very short and simple.
+    The query should be a string of keywords and phrases. keep it very short and simple.
     Avoid using quotation marks or parentheses. Focus on the most important 3-4 concepts.
     Consider the effectiveness of previous queries and adjust accordingly.
     Do not include any explanation, just provide the query string.
@@ -334,7 +334,7 @@ def main():
     analyzed_papers = set()  # Keep track of analyzed papers
     previous_queries = []  # Keep track of previous search queries
 
-    num_iterations = 5  # Number of search-analyze cycles
+    num_iterations = 3  # Number of search-analyze cycles
     papers_per_iteration = 3  # Number of papers to analyze in each iteration
 
     for iteration in range(num_iterations):
