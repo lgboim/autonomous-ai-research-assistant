@@ -10,7 +10,7 @@ import tempfile
 import io
 
 # Replace with your actual Anthropic API key
-ANTHROPIC_API_KEY = 'your-key-here'
+ANTHROPIC_API_KEY = 'YOUR_ANTHROPIC_API_KEY'
 
 def extract_json_from_text(text):
     json_match = re.search(r'\{[\s\S]*\}', text)
